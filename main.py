@@ -1,6 +1,5 @@
-def main():
-    print("Hello from tp1-mineria-datos!")
+import pandas as pd
 
+df = pd.read_csv('./data/vgsales.csv')
 
-if __name__ == "__main__":
-    main()
+print(df.head())
