@@ -28,7 +28,12 @@ export default function MapaCalorGrafico() {
             layout={{
                 title: 'Ventas Promedio por Género y Región',
                 height: 500,
-                width: 700
+                width: 700,
+                paper_bgcolor: '#000000',
+                plot_bgcolor: '#000000', 
+                font: {
+                    color: '#ffffff'  
+                }
             }}
         />
     );

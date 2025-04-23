@@ -32,7 +32,12 @@ export default function TortaGrafico() {
             layout={{
                 title: 'Distribución de Ventas Globales por Empresa',
                 height: 400,
-                width: 500
+                width: 500,
+                paper_bgcolor: '#000000',
+                plot_bgcolor: '#000000', 
+                font: {
+                    color: '#ffffff'  
+                }
             }}
         />
     );

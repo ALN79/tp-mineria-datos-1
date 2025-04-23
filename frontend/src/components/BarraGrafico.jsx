@@ -29,7 +29,12 @@ export default function BarraGrafico() {
                 xaxis: { title: 'Empresa' },
                 yaxis: { title: 'Cantidad de juegos' },
                 height: 500,
-                width: 900
+                width: 900,
+                paper_bgcolor: '#000000',
+                plot_bgcolor: '#000000', 
+                font: {
+                    color: '#ffffff'  
+                }
             }}
         />
     );
