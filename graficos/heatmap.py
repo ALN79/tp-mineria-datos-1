@@ -25,4 +25,6 @@ plt.xlabel('Región', fontsize=12)
 plt.ylabel('Género', fontsize=12)
 plt.xticks(rotation=45)  # Rotar etiquetas del eje X
 
+plt.savefig('sales_by_genre_region.png', dpi=300, bbox_inches='tight')  # Guardar imagen
+
 plt.show()
