@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import Plot from 'react-plotly.js';
+import Loader from './Loader';
+
 
 export default function MapaCalorGrafico() {
     const [data, setData] = useState(null);
@@ -10,7 +12,7 @@ export default function MapaCalorGrafico() {
             .then(setData);
     }, []);
 
-    if (!data) return <p>Cargando heatmap...</p>;
+    if (!data) return <p><Loader/></p>;
 
     return (
         <Plot

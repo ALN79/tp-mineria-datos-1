@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Plot from 'react-plotly.js';
+import Loader from './Loader';
 
 export default function BarraGrafico() {
     const [barData, setBarData] = useState(null);
@@ -10,7 +11,7 @@ export default function BarraGrafico() {
             .then(setBarData);
     }, []);
 
-    if (!barData) return <p>Cargando gráfico de barras...</p>;
+    if (!barData) return <p><Loader/></p>;
 
     const plotData = barData.genres.map((genre, idx) => ({
         x: barData.publishers,

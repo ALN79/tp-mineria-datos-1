@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Plot from 'react-plotly.js';
+import Loader from './Loader';
 
 export default function TortaGrafico() {
     const [chartData, setChartData] = useState(null);
@@ -15,7 +16,7 @@ export default function TortaGrafico() {
             });
     }, []);
 
-    if (!chartData) return <p>Cargando...</p>;
+    if (!chartData) return <p><Loader/></p>;
 
     return (
         <Plot
