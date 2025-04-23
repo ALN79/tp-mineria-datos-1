@@ -10,24 +10,34 @@ cd tp-mineria-datos-1
 
 code .
 ```
-2. Crear y Activar el entorno virtual uv
+
+## Pasos para la ejecución:
+
+1. Crear y Activar el entorno virtual uv
 ```bash
 uv venv
 ```
 
-3. Descargar las dependencias
+2. Descargar las dependencias
 ```bash
 uv sync
 ```
 
-4. Seleccionar el interprete de python en el entorno virtual
+3. Ejecutar el backend
 ```bash
-Ctrl + Shift + P
+uv run main.py
 ```
+### Ejecutar el frontend:
+
+1. Abrir una nueva terminal y navegar a la carpeta frontend
 ```bash
-Python: Select Interpreter
+cd frontend
 ```
+2. Instalar las dependencias
 ```bash
-Python 3.13.2 64-bit ('venv': venv)
+npm install
 ```
-Una vez se cambio el interprete es necesario borrar o matar la terminal y crear otra, esto se hace presionando el icono de basura en la terminal de VSCode y luego el icono de + para crear una nueva terminal. 
+3. Ejecutar el frontend
+```bash
+npm run dev
+```
