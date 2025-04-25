@@ -42,7 +42,7 @@ export const App = () => {
           <aside className="max-w-md text-left">
             <h2 className="text-2xl font-bold mb-3 text-slate-100">🏢 Géneros desarrollados por empresa</h2>
             <p className="text-slate-300 leading-relaxed">
-              Este gráfico te permite ver qué géneros lideran las producciones de las principales empresas desarrolladoras del sector gaming.
+            Este gráfico muestra la cantidad de videojuegos desarrollados por cada empresa, clasificados según su género. Permite identificar qué compañías lideran la producción dentro de la industria del gaming en cada categoría.
             </p>
           </aside>
         </div>
