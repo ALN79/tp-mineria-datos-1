@@ -49,10 +49,5 @@ def genero_por_empresa():
     }
     return jsonify(bar_data)
 
-# Sirve los archivos estáticos (para servir imágenes si es necesario)
-@app.route('/static/<path:filename>')
-def static_files(filename):
-    return send_from_directory(os.path.join(app.root_path, 'public'), filename)
-
 if __name__ == '__main__':
     app.run(debug=True)
